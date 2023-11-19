@@ -2,11 +2,11 @@ package main
 
 import (
 	"github.com/gofiber/fiber/v2"
+	"github.com/Wordyka/InternDelos-Wordyka/handlers"
 )
 
 func setupRoutes(app *fiber.App) {
-	app.Get("/", func(c *fiber.Ctx) error {
-		return c.SendString("Aquafarm Management Applications!")
-	})
+	app.Get("/", handlers.ListFarms)
 
+	app.Post("/farms", handlers.CreateFarm)
 }
