@@ -6,7 +6,11 @@ import (
 )
 
 func setupRoutes(app *fiber.App) {
-	app.Get("/", handlers.ListFarms)
+    // Group routes with v1 prefix
+    v1 := app.Group("/v1")
 
-	app.Post("/farms", handlers.CreateFarm)
+    // Farm routes
+    v1.Get("/farms", handlers.ListFarms)
+    v1.Post("/farm", handlers.CreateFarm)
+
 }

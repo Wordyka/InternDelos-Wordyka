@@ -7,21 +7,21 @@ import (
 )
 
 func ListFarms(c *fiber.Ctx) error {
-	facts := []models.Fact{}
-	database.DB.Db.Find(&facts)
+	farms := []models.Farm{}
+	database.DB.Db.Find(&farms)
 
-	return c.Status(200).JSON(facts)
+	return c.Status(200).JSON(farms)
 }
 
 func CreateFarm(c *fiber.Ctx) error {
 	farm := new(models.Farms)
-	if err := c.BodyParser(fact); err != nil {
+	if err := c.BodyParser(farm); err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
 			"message": err.Error(),
 		})
 	}
 
-	database.DB.Db.Create(&fact)
+	database.DB.Db.Create(&farm)
 
-	return c.Status(200).JSON(fact)
+	return c.Status(200).JSON(farm)
 }
