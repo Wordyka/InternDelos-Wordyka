@@ -13,4 +13,5 @@ func setupRoutes(app *fiber.App) {
     v1.Get("/farms", handlers.ListFarms)
     v1.Post("/farm", handlers.CreateFarm)
 
+ 
 }

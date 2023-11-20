@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 
+	"github.com/Wordyka/InternDelos-Wordyka/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
