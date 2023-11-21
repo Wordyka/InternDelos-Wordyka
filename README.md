@@ -32,6 +32,7 @@ Before you can run the application, make sure you have the following prerequisit
 ## Running The Docker
 - Execute the command `docker compose build` to build the Docker images for all services defined in docker-compose.yml file. 
 - Execute the command `docker compose up` to start the containers.
+- Use the API with base URL `http://127.0.0.1:3000/v1`
 
 ## API Documentation
 You can access the Postman API Documentation on this link :   
