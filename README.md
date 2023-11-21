@@ -3,8 +3,18 @@
 ## Overview
 Developing an Aquafarm Management Application API using Go Fiber, GORM, Postgres, and Docker as storage systems. I successfully implemented CRUD operations for farms and ponds within its relationship model. In addition, I also built a tracking system for API usage statistics for each API request.
 
+## Architecture Model
+![Architecture](https://github.com/Wordyka/InternDelos-Wordyka/blob/8bd2105dee2aafad7cf2556ece94c313ddcb1c47/img/Architecture.png)
+
 ## Entity Relationship Diagram 
 ![Acces this link](https://github.com/Wordyka/InternDelos-Wordyka/blob/fbd6a4e7f41ae216bf63651d445b304e86a11348/img/ERD%20Aquafarm.png)
+
+### Rows Data Example
+- Farms
+![Farms](https://github.com/Wordyka/InternDelos-Wordyka/blob/8bd2105dee2aafad7cf2556ece94c313ddcb1c47/img/Farms%20Rows%20Data.png)
+  
+- Ponds
+![Ponds](https://github.com/Wordyka/InternDelos-Wordyka/blob/8bd2105dee2aafad7cf2556ece94c313ddcb1c47/img/Ponds%20Rows%20Data.png)
 
 ## Prerequisites
 Before you can run the application, make sure you have the following prerequisites installed:
